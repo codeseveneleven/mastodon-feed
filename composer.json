@@ -1,0 +1,24 @@
+{
+	"name": "code711/mastodon-feed",
+	"type": "typo3-cms-extension",
+	"description": "Code711 Mastodon Feed",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Patricia Ottmar",
+			"role": "Developer",
+			"email": "p.ottmar@12bis3.de"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Code711\\MastodonFeed\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "mastodon_feed"
+		}
+	}
+}
+

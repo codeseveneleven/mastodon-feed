@@ -1,0 +1,23 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div class="mt-timeline"
+     data-instanceurl="{settings.instanceUrl}"
+     data-timelinetype="{settings.timelineType}"
+     data-userid="{settings.userId}"
+     data-profilename="{settings.profileName}"
+     data-hashtagname="{settings.hashtagName}">
+    <div id="mt-body" class="mt-body" role="feed">
+        <div class="loading-spinner"></div>
+    </div>
+</div>
+
+<f:section name="HeaderAssets">
+    <f:asset.css identifier="mastodonCss" href="EXT:mastodon_feed/Resources/Public/Css/mastodon-timeline.min.css" />
+</f:section>
+
+<f:section name="FooterAssets">
+    <f:asset.script identifier="mastodonJs" src="EXT:mastodon_feed/Resources/Public/JavaScript/mastodon-timeline.js" />
+</f:section>
+
+</html>

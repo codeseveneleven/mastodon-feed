@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-09-12T13:49:12Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="tt_content.mastodon_feed">
+				<source>Code711: Mastodon Feed</source>
+			</trans-unit>
+
+			<trans-unit id="flex.instanceUrl">
+				<source>Your Mastodon instance</source>
+			</trans-unit>
+			<trans-unit id="flex.timelineType">
+				<source>Your Timeline type [local | profile | hashtag]</source>
+			</trans-unit>
+			<trans-unit id="flex.userId">
+				<source>Your user ID on Mastodon instance</source>
+			</trans-unit>
+			<trans-unit id="flex.profileName">
+				<source>Your user name on Mastodon instance</source>
+			</trans-unit>
+			<trans-unit id="flex.hashtagName">
+				<source>YourHashtag</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

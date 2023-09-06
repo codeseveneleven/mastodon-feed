@@ -15,9 +15,7 @@ declare(strict_types=1);
 
 namespace Code711\MastodonFeed\Controller;
 
-use TYPO3\CMS\Extensionmanager\Controller\ActionController;
-
-class FeedController extends ActionController
+class FeedController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
     public function indexAction()
     {

@@ -5,9 +5,9 @@ defined('TYPO3_MODE') or die();
     'MastodonFeed',
     'Feed',
     [
-        'FeedController' => 'index',
+        'Feed' => 'index',
     ],
     [
-        'FeedController' => 'index',
+        'Feed' => 'index',
     ]
 );

@@ -1,8 +1,10 @@
 <?php
-defined('TYPO3_MODE') or die();
+if (!defined('TYPO3_MODE')) die ('Access denied.');
+
+$extensionName = strtolower(\TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase($_EXTKEY));
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'MastodonFeed',
+    $_EXTKEY,
     'Feed',
     'LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:tt_content.mastodon_feed'
 );

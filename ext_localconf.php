@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 /*
  * This file is part of the TYPO3 project.
  * (c) 2022 B-Factor GmbH / 12bis3 / Sudhaus7 / code711.de
@@ -13,22 +11,19 @@ declare(strict_types=1);
  * @copyright 2023 B-Factor GmbH / 12bis3 / Sudhaus7 / https://code711.de/
  */
 
-use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
-use Code711\MastodonFeed\Controller\FeedController;
-
 defined('TYPO3') or die();
 
 (function () {
 
-    ExtensionUtility::configurePlugin(
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
         'MastodonFeed',
         'Feed',
         [
-            FeedController::class => 'index',
+            \Code711\MastodonFeed\Controller\FeedController::class => 'index',
         ],
         [
-            FeedController::class => 'index',
-        ],
+            \Code711\MastodonFeed\Controller\FeedController::class => 'index',
+        ]
     );
 
 })();

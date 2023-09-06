@@ -15,13 +15,12 @@ declare(strict_types=1);
 
 namespace Code711\MastodonFeed\Controller;
 
-use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Extensionmanager\Controller\ActionController;
 
 class FeedController extends ActionController
 {
-    public function indexAction(): ResponseInterface
+    public function indexAction()
     {
-        return $this->htmlResponse();
+
     }
 }

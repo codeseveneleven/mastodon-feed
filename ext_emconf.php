@@ -13,13 +13,13 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Code711 Mastodon Feed',
-    'description' => 'Embedd a mastodon feed',
+    'description' => 'Embed a mastodon feed, configurable for a timeline or a tag from a specific server',
     'category' => 'plugin',
     'author' => 'Patricia Ottmar',
     'author_email' => 'p.ottmar@12bis3.de',
-    'author_company' => '12bis3',
+    'author_company' => '12bis3 / Code711',
     'state' => 'stable',
-    'version' => '1.0.0',
+    'version' => '1.0.1',
     'constraints' => [
         'depends' => [
             'typo3' => '11.0.0-12.4.99',

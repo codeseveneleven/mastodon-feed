@@ -24,6 +24,9 @@
 			<trans-unit id="flex.hashtagName">
 				<source>YourHashtag</source>
 			</trans-unit>
+			<trans-unit id="flex.tootsLimit">
+				<source>Maximum amount of toots to get. Default: 20</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

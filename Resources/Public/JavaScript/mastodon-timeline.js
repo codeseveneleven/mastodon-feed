@@ -35,7 +35,7 @@ window.addEventListener("load", () => {
         hashtag_name: document.querySelector('.mt-timeline').dataset.hashtagname,
 
         // Maximum amount of toots to get. Default: 20
-        toots_limit: "20",
+        toots_limit: document.querySelector('.mt-timeline').dataset.tootslimit,
 
         // Hide unlisted toots. Default: don't hide
         hide_unlisted: false,

@@ -10,6 +10,18 @@
 			"email": "p.ottmar@12bis3.de"
 		}
 	],
+	"config": {
+		"vendor-dir": ".Build/vendor",
+		"bin-dir": ".Build/bin",
+		"platform": {
+			"php": "8.2.1"
+		},
+		"allow-plugins": {
+			"typo3/cms-composer-installers": true,
+			"typo3/class-alias-loader": true,
+			"php-http/discovery": true
+		}
+	},
 	"autoload": {
 		"psr-4": {
 			"Code711\\MastodonFeed\\": "Classes/"
@@ -24,6 +36,8 @@
 		"typo3/cms-frontend": "^12.0",
 		"typo3/cms-tstemplate": "^12.0",
 		"typo3/cms-install": "^12.0",
+		"typo3/cms-extbase": "^12.0",
+		"typo3/cms-fluid-styled-content":"^12.0",
 		"typo3/coding-standards": "^0.5.5"
 	},
 	"extra": {
@@ -34,4 +48,3 @@
 		}
 	}
 }
-

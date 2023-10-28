@@ -7,35 +7,33 @@
 		<body>
 			<trans-unit id="tt_content.mastodon_feed">
 				<source>Code711: Mastodon Feed</source>
+				<target>Code711: Mastodon Feed</target>
 			</trans-unit>
 
 			<trans-unit id="flex.instanceUrl">
 				<source>Your Mastodon instance</source>
+				<target>Ihre Mastodon-Instanz</target>
 			</trans-unit>
 			<trans-unit id="flex.timelineType">
-				<source>Your Timeline type</source>
-			</trans-unit>
-			<trans-unit id="flex.timelineType.local">
-				<source>Local feed of instance</source>
-			</trans-unit>
-			<trans-unit id="flex.timelineType.profile">
-				<source>Profile feed</source>
-			</trans-unit>
-			<trans-unit id="flex.timelineType.hashtag">
-				<source>Hashtag feed</source>
+				<source>Your Timeline type [local | profile | hashtag]</source>
+				<target>Ihr Zeittyp [lokal | Profil | Hashtag]</target>
 			</trans-unit>
 			<trans-unit id="flex.userId">
 				<source>Your user ID on Mastodon instance</source>
+				<target>Ihre Benutzer-ID auf Ihrer Mastodon-Instanz</target>
 			</trans-unit>
 			<trans-unit id="flex.profileName">
 				<source>Your user name on Mastodon instance</source>
+				<target>Ihr Benutzername auf Ihrer Mastodon-Instanz</target>
 			</trans-unit>
 			<trans-unit id="flex.hashtagName">
 				<source>Your Hashtag</source>
+				<target>Ihr Hashtag</target>
 			</trans-unit>
 
 			<trans-unit id="plugin.link.seemore">
 				<source>See more posts at Mastodon</source>
+				<target>Mehr Beiträge auf Mastodon anzeigen</target>
 			</trans-unit>
 		</body>
 	</file>

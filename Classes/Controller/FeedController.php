@@ -16,12 +16,15 @@ declare(strict_types=1);
 namespace Code711\MastodonFeed\Controller;
 
 use Psr\Http\Message\ResponseInterface;
+use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class FeedController extends ActionController
 {
     public function indexAction(): ResponseInterface
     {
+        $data = $this->request?->getAttribute( 'currentContentObject')?->data ?? $this->configurationManager->getContentObject()->data;
+        $this->view->assign( 'data', $data);
         return $this->htmlResponse();
     }
 }

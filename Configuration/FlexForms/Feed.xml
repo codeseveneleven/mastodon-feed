@@ -17,14 +17,31 @@
             <settings.timelineType>
                 <TCEforms>
                     <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.timelineType</label>
+                    <onChange>reload</onChange>
                     <config>
-                        <type>input</type>
+                        <type>select</type>
+                        <renderType>selectSingle</renderType>
+                        <items>
+                            <numIndex index="0" type="array">
+                                <numIndex index="0">LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.timelineType.local</numIndex>
+                                <numIndex index="1">local</numIndex>
+                            </numIndex>
+                            <numIndex index="1" type="array">
+                                <numIndex index="0">LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.timelineType.profile</numIndex>
+                                <numIndex index="1">profile</numIndex>
+                            </numIndex>
+                            <numIndex index="2" type="array">
+                                <numIndex index="0">LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.timelineType.hashtag</numIndex>
+                                <numIndex index="1">hashtag</numIndex>
+                            </numIndex>
+                        </items>
                     </config>
                 </TCEforms>
             </settings.timelineType>
             <settings.userId>
                 <TCEforms>
                     <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.userId</label>
+                    <displayCond>FIELD:settings.timelineType:=:profile</displayCond>
                     <config>
                         <type>input</type>
                     </config>
@@ -33,6 +50,8 @@
             <settings.profileName>
                 <TCEforms>
                     <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.profileName</label>
+                    <displayCond>FIELD:settings.timelineType:=:profile</displayCond>
+
                     <config>
                         <type>input</type>
                     </config>
@@ -41,6 +60,8 @@
             <settings.hashtagName>
                 <TCEforms>
                     <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.hashtagName</label>
+                    <displayCond>FIELD:settings.timelineType:=:hashtag</displayCond>
+
                     <config>
                         <type>input</type>
                     </config>

@@ -12,6 +12,9 @@ If you need to look up your Mastodon user id, this tool can help: https://mastod
 
 ## Changelog
 
+### 1.0.2
+* Bugfix issue #1 - enable support for multiple instances of the plugin in one page
+
 ### 1.0.1
 * prepared for TER
 

@@ -12,6 +12,9 @@
 			<trans-unit id="flex.instanceUrl">
 				<source>Your Mastodon instance</source>
 			</trans-unit>
+			<trans-unit id="flex.instanceUrl.description">
+				<source>Please insert Mastodon instance incl. scheme like https://</source>
+			</trans-unit>
 			<trans-unit id="flex.timelineType">
 				<source>Your Timeline type</source>
 			</trans-unit>
@@ -26,6 +29,9 @@
 			</trans-unit>
 			<trans-unit id="flex.userId">
 				<source>Your user ID on Mastodon instance</source>
+			</trans-unit>
+			<trans-unit id="flex.userId.description">
+				<source>You will find your user id by requesting following URI: https://INSTANCE/api/v1/accounts/lookup?acct=USERNAME</source>
 			</trans-unit>
 			<trans-unit id="flex.profileName">
 				<source>Your user name on Mastodon instance</source>

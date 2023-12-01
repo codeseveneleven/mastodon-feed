@@ -1,14 +1,15 @@
 <T3DataStructure>
-	<meta type="array">
-		<langChildren>0</langChildren>
-		<langDisable>1</langDisable>
-	</meta>
-	<ROOT>
-		<type>array</type>
-		<el>
+    <meta type="array">
+        <langChildren>0</langChildren>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT>
+        <type>array</type>
+        <el>
             <settings.instanceUrl>
                 <TCEforms>
                     <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.instanceUrl</label>
+                    <description>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.instanceUrl.description</description>
                     <config>
                         <type>input</type>
                     </config>
@@ -41,6 +42,7 @@
             <settings.userId>
                 <TCEforms>
                     <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.userId</label>
+                    <description>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.userId.description</description>
                     <displayCond>FIELD:settings.timelineType:=:profile</displayCond>
                     <config>
                         <type>input</type>
@@ -67,6 +69,6 @@
                     </config>
                 </TCEforms>
             </settings.hashtagName>
-		</el>
-	</ROOT>
+        </el>
+    </ROOT>
 </T3DataStructure>

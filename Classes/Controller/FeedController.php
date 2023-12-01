@@ -16,15 +16,39 @@ declare(strict_types=1);
 namespace Code711\MastodonFeed\Controller;
 
 use Psr\Http\Message\ResponseInterface;
-use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+use TYPO3\CMS\Extbase\Mvc\Request;
+use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 
 class FeedController extends ActionController
 {
     public function indexAction(): ResponseInterface
     {
-        $data = $this->request?->getAttribute( 'currentContentObject')?->data ?? $this->configurationManager->getContentObject()->data;
-        $this->view->assign( 'data', $data);
+        $this->view->assign('data', $this->getDataOfCurrentContentObject());
+
         return $this->htmlResponse();
+    }
+
+    protected function getDataOfCurrentContentObject(): array
+    {
+        $data = [];
+
+        if (
+            ($contentObjectRenderer = $this->getContentObjectRenderer())
+            && $contentObjectRenderer instanceof ContentObjectRenderer
+        ) {
+            $data = $contentObjectRenderer->data;
+        }
+
+        return $data;
+    }
+
+    protected function getContentObjectRenderer(): ?ContentObjectRenderer
+    {
+        if ($this->request instanceof Request) {
+            return $this->request->getAttribute('currentContentObject');
+        } else {
+            return $this->configurationManager->getContentObject();
+        }
     }
 }

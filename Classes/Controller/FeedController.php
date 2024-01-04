@@ -25,7 +25,6 @@ class FeedController extends ActionController
     public function indexAction(): ResponseInterface
     {
         $this->view->assign('data', $this->getDataOfCurrentContentObject());
-
         return $this->htmlResponse();
     }
 

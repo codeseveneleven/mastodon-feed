@@ -8,6 +8,7 @@
      data-profilename="{settings.profileName}"
      data-hashtagname="{settings.hashtagName}"
      data-linkseemore="{f:translate(key: 'plugin.link.seemore')}"
+     data-limit="{f:if(condition: '{settings.tootsLimit}', then: '{settings.tootsLimit}', else: '20')}"
     >
     <div class="mt-body" id="mt-body-{data.uid}" role="feed">
         <div class="loading-spinner"></div>

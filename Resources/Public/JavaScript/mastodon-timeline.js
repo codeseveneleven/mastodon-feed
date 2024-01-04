@@ -14,7 +14,6 @@ window.addEventListener("load", () => {
 
   for (timelineElement of timelineElements) {
     (function() {
-      console.log(timelineElement);
 
       const elementDataSet = timelineElement.parentNode.dataset.instanceurl ? timelineElement.parentNode.dataset : timelineElement.dataset;
       const mastodonTimeline = new MastodonApi({

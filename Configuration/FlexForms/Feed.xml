@@ -53,7 +53,6 @@
                 <TCEforms>
                     <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.profileName</label>
                     <displayCond>FIELD:settings.timelineType:=:profile</displayCond>
-
                     <config>
                         <type>input</type>
                     </config>
@@ -63,12 +62,20 @@
                 <TCEforms>
                     <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.hashtagName</label>
                     <displayCond>FIELD:settings.timelineType:=:hashtag</displayCond>
-
                     <config>
                         <type>input</type>
                     </config>
                 </TCEforms>
             </settings.hashtagName>
-        </el>
-    </ROOT>
+            <settings.tootsLimit>
+                <TCEforms>
+                    <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.tootsLimit</label>
+                    <config>
+                        <type>input</type>
+                        <default>20</default>
+                    </config>
+                </TCEforms>
+            </settings.tootsLimit>
+		</el>
+	</ROOT>
 </T3DataStructure>

@@ -39,6 +39,9 @@
 			<trans-unit id="flex.hashtagName">
 				<source>Your Hashtag</source>
 			</trans-unit>
+			<trans-unit id="flex.tootsLimit">
+				<source>Maximum amount of toots to get</source>
+			</trans-unit>
 
 			<trans-unit id="plugin.link.seemore">
 				<source>See more posts at Mastodon</source>

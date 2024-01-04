@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.plugins {
+  elements {
+    mastodon-feed {
+      iconIdentifier = ext-social-mastodon
+      title = LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:plugin.mastodonfeed.title
+      description = LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:plugin.mastodonfeed.description
+      tt_content_defValues {
+        CType = list
+        list_type = mastodonfeed_feed
+      }
+    }
+  }
+}

@@ -12,6 +12,16 @@ If you need to look up your Mastodon user id, this tool can help: https://mastod
 
 ## Changelog
 
+### 1.0.3
+* Bugfix issue #2 - Extension is not compatible with PHP 7.4.* like the composer.json says
+* Feature - Add toots limit in plugin settings
+* Merge pull request #4 from froemken/addPhp74Compatibility
+* Merge pull request #8 from froemken/updateGithubCheckout
+* Merge pull request #7 from froemken/addDescriptionToFlexForm
+* Merge pull request #6 from froemken/addLicenseFile
+* Merge pull request #5 from froemken/removeUnneededPluginFields
+* Merge pull request #3 from froemken/addEntryNewContentElementWizard
+
 ### 1.0.2
 * Bugfix issue #1 - enable support for multiple instances of the plugin in one page
 

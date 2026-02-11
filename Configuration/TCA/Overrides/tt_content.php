@@ -4,32 +4,38 @@ declare(strict_types=1);
 
 /*
  * This file is part of the TYPO3 project.
- * (c) 2022 B-Factor GmbH / 12bis3 / Sudhaus7 / code711.de
+ * (c) 2026 B-Factor GmbH
+ *          Sudhaus7
+ *          12bis3
+ *          Code711.de
  *
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
  * The TYPO3 project - inspiring people to share!
+ * @copyright https://code711.de/
  *
- * @copyright 2023 B-Factor GmbH / 12bis3 / Sudhaus7 / https://code711.de/
  */
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
-defined('TYPO3') or die();
+defined('TYPO3') || die();
 
 (function () {
     ExtensionUtility::registerPlugin(
         'MastodonFeed',
         'Feed',
-        'LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:tt_content.mastodon_feed'
+        'LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:plugin.mastodonfeed.title',
+        'ext-social-mastodon',
+        'plugins',
+        'LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:plugin.mastodonfeed.description'
     );
 
-    $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['mastodonfeed_feed'] = 'pi_flexform';
-    $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['mastodonfeed_feed'] = 'pages,recursive';
+    ExtensionManagementUtility::addToAllTCAtypes('tt_content', '--div--;Configuration,pi_flexform,', 'mastodonfeed_feed', 'after:subheader');
 
     ExtensionManagementUtility::addPiFlexFormValue(
-        'mastodonfeed_feed',
-        'FILE:EXT:mastodon_feed/Configuration/FlexForms/Feed.xml'
+        '*',
+        'FILE:EXT:mastodon_feed/Configuration/FlexForms/Feed.xml',
+        'mastodonfeed_feed'
     );
 })();

@@ -11,7 +11,12 @@
      data-limit="{f:if(condition: '{settings.tootsLimit}', then: '{settings.tootsLimit}', else: '20')}"
     >
     <div class="mt-body" id="mt-body-{data.uid}" role="feed">
-        <div class="loading-spinner"></div>
+        <div id="mt-container" class="mt-container">
+            <div class="mt-body" role="feed">
+                <div class="mt-loading-spinner"></div>
+            </div>
+        </div>
+
     </div>
 </div>
 
@@ -20,7 +25,10 @@
 </f:section>
 
 <f:section name="FooterAssets">
-    <f:asset.script identifier="mastodonJs" src="EXT:mastodon_feed/Resources/Public/JavaScript/mastodon-timeline.js" />
+    <f:asset.script identifier="mastodonJs" src="EXT:mastodon_feed/Resources/Public/JavaScript/mastodon-timeline.umd.js" />
+    <script>
+        const myTimeline = new MastodonTimeline.Init();
+    </script>
 </f:section>
 
 </html>

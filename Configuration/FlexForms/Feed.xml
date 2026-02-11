@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <T3DataStructure>
     <meta type="array">
         <langChildren>0</langChildren>
@@ -7,75 +8,63 @@
         <type>array</type>
         <el>
             <settings.instanceUrl>
-                <TCEforms>
-                    <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.instanceUrl</label>
-                    <description>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.instanceUrl.description</description>
-                    <config>
-                        <type>input</type>
-                    </config>
-                </TCEforms>
+                <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.instanceUrl</label>
+                <description>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.instanceUrl.description</description>
+                <config>
+                    <type>input</type>
+                </config>
             </settings.instanceUrl>
             <settings.timelineType>
-                <TCEforms>
-                    <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.timelineType</label>
-                    <onChange>reload</onChange>
-                    <config>
-                        <type>select</type>
-                        <renderType>selectSingle</renderType>
-                        <items>
-                            <numIndex index="0" type="array">
-                                <numIndex index="0">LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.timelineType.local</numIndex>
-                                <numIndex index="1">local</numIndex>
-                            </numIndex>
-                            <numIndex index="1" type="array">
-                                <numIndex index="0">LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.timelineType.profile</numIndex>
-                                <numIndex index="1">profile</numIndex>
-                            </numIndex>
-                            <numIndex index="2" type="array">
-                                <numIndex index="0">LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.timelineType.hashtag</numIndex>
-                                <numIndex index="1">hashtag</numIndex>
-                            </numIndex>
-                        </items>
-                    </config>
-                </TCEforms>
+                <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.timelineType</label>
+                <onChange>reload</onChange>
+                <config>
+                    <type>select</type>
+                    <renderType>selectSingle</renderType>
+                    <items>
+                        <numIndex index="0" type="array">
+                            <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.timelineType.local</label>
+                            <value>local</value>
+                        </numIndex>
+                        <numIndex index="1" type="array">
+                            <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.timelineType.profile</label>
+                            <value>profile</value>
+                        </numIndex>
+                        <numIndex index="2" type="array">
+                            <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.timelineType.hashtag</label>
+                            <value>hashtag</value>
+                        </numIndex>
+                    </items>
+                </config>
             </settings.timelineType>
             <settings.userId>
-                <TCEforms>
-                    <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.userId</label>
-                    <description>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.userId.description</description>
-                    <displayCond>FIELD:settings.timelineType:=:profile</displayCond>
-                    <config>
-                        <type>input</type>
-                    </config>
-                </TCEforms>
+                <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.userId</label>
+                <description>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.userId.description</description>
+                <displayCond>FIELD:settings.timelineType:=:profile</displayCond>
+                <config>
+                    <type>input</type>
+                </config>
             </settings.userId>
             <settings.profileName>
-                <TCEforms>
-                    <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.profileName</label>
-                    <displayCond>FIELD:settings.timelineType:=:profile</displayCond>
-                    <config>
-                        <type>input</type>
-                    </config>
-                </TCEforms>
+                <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.profileName</label>
+                <displayCond>FIELD:settings.timelineType:=:profile</displayCond>
+                <config>
+                    <type>input</type>
+                </config>
             </settings.profileName>
             <settings.hashtagName>
-                <TCEforms>
-                    <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.hashtagName</label>
-                    <displayCond>FIELD:settings.timelineType:=:hashtag</displayCond>
-                    <config>
-                        <type>input</type>
-                    </config>
-                </TCEforms>
+                <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.hashtagName</label>
+                <displayCond>FIELD:settings.timelineType:=:hashtag</displayCond>
+                <config>
+                    <type>input</type>
+                </config>
             </settings.hashtagName>
             <settings.tootsLimit>
-                <TCEforms>
-                    <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.tootsLimit</label>
-                    <config>
-                        <type>input</type>
-                        <default>20</default>
-                    </config>
-                </TCEforms>
+                <label>LLL:EXT:mastodon_feed/Resources/Private/Language/locallang.xlf:flex.tootsLimit</label>
+                <config>
+                    <type>input</type>
+                    <default>20</default>
+                </config>
             </settings.tootsLimit>
-		</el>
-	</ROOT>
+        </el>
+    </ROOT>
 </T3DataStructure>
